@@ -25,3 +25,8 @@ if (age < 18) {
     console.log (`Il costo del tuo biglietto è:
     ${normalprice}`);
   }
+
+
+  document.getElementById("minor").innerHTML = minor
+  document.getElementById("senior").innerHTML = senior
+  document.getElementById("normalprice").innerHTML = normalprice
