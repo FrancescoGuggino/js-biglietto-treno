@@ -16,17 +16,20 @@ let senior = normalprice - seniorsale;
 
 // calcoli variabile età e stampa
 if (age < 18) {
+    
     console.log (`Il costo del tuo biglietto è:
     ${minor}`);
+
+    document.getElementById("prezzo").innerHTML = minor;
   } else if (age > 60) {  
     console.log (`Il costo del tuo biglietto è:
     ${senior}`);
+    document.getElementById("prezzo").innerHTML = senior
   } else {
     console.log (`Il costo del tuo biglietto è:
     ${normalprice}`);
+    document.getElementById("prezzo").innerHTML = normalprice
   }
 
 
-  document.getElementById("minor").innerHTML = minor
-  document.getElementById("senior").innerHTML = senior
-  document.getElementById("normalprice").innerHTML = normalprice
+  
