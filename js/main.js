@@ -32,4 +32,17 @@ if (age < 18) {
   }
 
 
-  
+//Form bonus
+function submitForm(event) {
+    event.preventDefault();
+
+    console.log("Il FORM FUNZIONA!");
+
+    let userName = document.getElementById("inputname").value;
+    let userKm = document.getElementById("inputkm").value;
+
+    let userage = document.getElementById("selectage").value;
+
+    let random = math.floor(math.random() * 7) +1;
+
+}

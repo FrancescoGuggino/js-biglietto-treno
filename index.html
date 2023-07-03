@@ -18,10 +18,52 @@
                 <div class="col-12 text-warning pb-3">
                     <p id="prezzo"></p>
                 </div>
-                           
-                </div>
             </div>
         </div>
+        <hr>
+            <h1 class="text-center text-white my-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <form class="row p-4 gy-3" onsubmit="submitForm(event)">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <label for="inputname" class="form-label">Nome Cognome</label>
+                    <input type="text" class="form-control" id="inputname">
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <label for="inputkm" class="form-label">Km da percorrere</label>
+                    <input type="text" class="form-control" id="inputkm">
+                </div>
+                <div class="col-12 col-md-8 col-xl-4">
+                    <label for="selectage" class="form-label">Fascia d'età</label>
+                    <select id="selectage" class="form-select">
+                        <option selected="">Seleziona fascia</option>
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Adulto">Adulto</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-warning">Genera</button>
+                </div>
+            </form>
+
+            <div class="row bg-white">
+                <div class="col-3">
+                    <h4>NOME PASSEGGERO</h4>
+                    <p id="inputname"></p>
+                </div>
+                <div class="col-2">
+                    <p><b>Offerta</b></p>
+                </div>
+                <div class="col-2">
+                    <p><b>Carrozza</b></p>
+                    <p id="random"></p>
+                </div>
+                <div class="col-2">
+                    <p><b>Codice CP</b></p>
+                </div>
+                <div class="col-2">
+                    <p><b>Costo biglietto</b></p>
+                </div>
+            </div>
     </div>
 
 
